@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> TICKETS </title>
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="styles_login.css"> 
+</head>
+<body>
+    <header>
+      <h1> TRANSIT </h1>
+    </header>
+    
+      <!-- The navigation menu -->
+    <div class="navbar">
+      <a href="home.html"> Home </a>
+      <a href="schedule.html"> Schedule </a>
+      <a href="tickets.html"> Tickets </a>
+    </div>
+
+    <div class = "mapbackground">
+      <br>
+      <form>
+        <!-- <div class="ticket-form"> -->
+          <div class="container">
+            <h2 style="text-align: center;"> TICKETS </h2>
+            <hr>
+
+          <div class="ticket-form-content2">
+          <div class = "destinations">
+            <label for="from">From:</label>
+            <br>
+            <select name="from" id="from">
+              <option value="placeholder"> </option>
+              <option value="corozaltown">Corozal Town</option>
+              <option value="owtown">Orange Walk Town</option>
+              <option value="bzcity">Belize City</option>
+              <option value="belmopan">Belmopan</option>
+              <option value="sanignacio">San Ignacio</option>
+              <option value="benqueviejo">Benque Viejo</option>
+              <option value="dangriga">Dangriga</option>
+              <option value="puntagorda">Punta Gorda</option>
+            </select>
+
+            <br>
+
+            <label for="to">To:</label>
+            <br>
+            <select name="to" id="to">
+              <option value="placeholder"> </option>
+              <option value="corozaltown">Corozal Town</option>
+              <option value="owtown">Orange Walk Town</option>
+              <option value="bzcity">Belize City</option>
+              <option value="belmopan">Belmopan</option>
+              <option value="sanignacio">San Ignacio</option>
+              <option value="benqueviejo">Benque Viejo</option>
+              <option value="dangriga">Dangriga</option>
+              <option value="puntagorda">Punta Gorda</option>
+            </select>
+          </div>
+          
+          <label style="margin-left:10px;"> Depart </label> 
+          <input type="date" class="tarikh bg-dark"> <br>
+
+          
+          <div class="addsubtract">
+            <p>Adults</p> 
+            <span class="minus"> - </span>
+            <span class="num"> 01 </span>
+            <span class="plus"> + </span>
+          </div>
+          <br>
+          <div class="addsubtract">
+            <p>Children</p> 
+            <span class="minus"> - </span>
+            <span class="num"> 01 </span>
+            <span class="plus"> + </span>
+          </div>
+
+
+          <script>
+            // Script for adult's tickets.
+            const plus = document.querySelector(".plus"),
+            minus = document.querySelector(".minus"),
+            num = document.querySelector(".num");
+
+            let a =1;
+
+            plus.addEventListener("click", ()=> {
+              a++;
+              a = (a < 10) ? "0" + a : a;
+              num.innerText = a;
+              console.log(a);
+            });
+
+            minus.addEventListener("click", ()=> {
+              if (a > 1){
+                a--;
+                a = (a < 10) ? "0" + a : a;
+              num.innerText = a;
+              } 
+            });
+          </script>
+
+          <br>
+
+          <p style="text-align: center;">60 Tickets Left</p>
+
+          <button type="submit"  class="submit-btn"> <a href="ticketpaid.html"> BUY TICKETS </button> </a>
+
+          <!-- <input type="submit" value="buytickets" class="submit-btn" onclick="location.href='https://google.com';"> -->
+        </div>
+        <br>
+        </div>
+      </form>
+      <br>
+    </div> 
+
+    
+    <footer>
+      <h1> &copy; Copyright Reserved. </h1> <br>
+      <a href="termsofagreement.html" style="color:white">Terms & Privacy</a> | <a href="contactus.html" style="color:white">Contact Us </a>
+      <br> <p> Cameron Tillett. </p>
+      <p> Advanced Web Design 2022, University of Belize. </p>
+      <p> Prof. Dalwin Lewis. </p><br><br>
+    </footer>
+</body>
+</html>

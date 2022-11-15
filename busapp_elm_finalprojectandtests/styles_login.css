@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+	font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    font-size: 20px;
+	padding: 0;
+	margin: 0;
+	width: auto;
+	height: auto;
+}
+
+body {
+    background: #F2BFBB;
+}
+
+/*------------------- PAGE DEFAULT -------------------*/
+header, footer {
+	/* position: absolute; font-size: 40px;*/
+    background: #F22D1B;
+	text-align: center;
+	color: #F2F2F2;
+	width: 100%;	
+}
+
+header h1 {
+	position: absolute;
+	margin-top: 10px;
+	left: 43%;
+	font-size: 60px;
+}
+
+header {
+	height: 10vh;
+}
+
+footer {
+	height: 20vh;
+	bottom: 0;
+}
+
+footer h1 {
+	position: absolute;
+	left: 45%;
+	margin-top: 10px;
+}
+
+.mapbackground {
+    background-image: url("maps.jpg");
+    border-radius: 20px;
+}
+
+a {
+    text-decoration:none;
+}
+
+/*------------------- NAVIGATION BAR-------------------*/
+/* Style the navigation menu */
+.navbar {
+	width: 100%;
+	background-color: #F23E16;
+	overflow: auto;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+	float: left;
+	padding: 12px;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 25px;
+	width: 33.33%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+	text-align: center; /* If you want the text to be centered */
+  }
+  
+  /* Add a background color on mouse-over */
+  .navbar a:hover {
+	background-color: #F28379;
+	color: #4B4B4B;
+  }
+  
+  /* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+  @media screen and (max-width: 500px) {
+	.navbar a {
+	  float: none;
+	  display: block;
+	  width: 100%;
+	  text-align: left; /* If you want the text to be left-aligned on small screens */
+	}
+  }
+
+/*------------------- SIGNUP & LOGIN FORMS -------------------*/
+h2 {
+	font-size: 40px;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f2f2f2;
+  border-radius: 10px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #F23E16;
+  color: #F2F2F2;
+  padding: 30px 60px;
+  margin: 8px 8px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.9;
+  border-radius: 20px;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  background-color: #F28379;
+}
+
+/* Add padding to container elements */
+.container {
+    border: 3px solid #F22D1B;
+    background: #F2BFBB;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 1px 1px 15px #000;
+}
+
+/* Change styles for buttons on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+/*------------------- SCHEDULE PAGE -------------------*/
+.schedulecontainer {
+	border: 3px solid #F22D1B;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+	background: #F2BFBB;
+	width: auto;
+	box-shadow: 1px 1px 15px #000;
+	border-radius: 20px;
+    margin: auto;
+}
+
+/*------------------- HOME PAGE -------------------*/
+.home {
+	border: 3px solid #F22D1B;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+	background: #F2BFBB;
+	width: auto;
+	box-shadow: 1px 1px 15px #000;
+	border-radius: 20px;
+    margin: auto;
+}
+
+/*------------------- TICKETS PAGE -------------------*/
+.ticket-form {
+	height: 600px;
+	width: 600px;
+	margin-top: 5%;
+	margin-left: 35%;
+	background: #F2BFBB;
+	border-radius: 20px;
+	box-shadow: 1px 1px 15px #000;
+	border: 3px solid #F22D1B;
+}
+
+.ticket-form-bg-warning {
+	padding: 8px;
+	background-color: #4B4B4B;
+}
+
+.ticket-form-content2 .input {
+	width: 400pxl;
+	padding: 10px;
+	margin: 10px;
+	color: #F2F2F2;
+}
+
+.ticket-form-content2 .tarikh {
+	margin: 10px;
+	padding: 10px;
+	color: black;
+}
+
+.ticket-form-content2 .submit-btn {
+	border: none;
+	outline: none;
+	width: auto;
+	padding: 10px;
+	margin-left: 20px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	border: 3px solid #F22D1B;
+	background: #F28379;
+	color: #F2F2F2;
+	font-size: 40px;
+}
+
+.destinations {
+	margin-left: 20%;
+}
+
+/*------------------- ADD/SUBTRACT TICKETS -------------------*/
+.addsubtract {
+	height: 40px;
+	min-width: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #F2F2F2;
+	border-radius: 20px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	margin-right: 20%;
+	margin-left: 20%;
+}
+
+.addsubtract span {
+	width: 10%;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;	
+}
+
+.addsubtract span.num {
+	font-size: 20px;
+	border-right: 2px solid rgba(0, 0, 0, 2);
+	border-left: 2px solid rgba(0, 0, 0, 2);
+	pointer-events: none;
+}
+
+/*------------------- info -------------------*/
+.info {
+	margin-right: 20%;
+	margin-left: 20%;
+	padding-bottom: 50%;
+}
+
+.submit {
+	background-color: #F23E16;
+	color: #F2F2F2;
+	padding: 30px 60px;
+	margin: 8px 8px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.9;
+	border-radius: 20px;
+  }
